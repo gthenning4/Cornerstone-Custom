@@ -1,0 +1,8 @@
+<ul class="productGrid">
+    {{#each products as |product|}}
+    <li class="product">
+            {{>components/products/card settings=../settings show_compare=../show_compare show_rating=../settings.show_product_rating theme_settings=../theme_settings customer=../customer event=../event position=(add @index 1) hoverImg=product.images.[1].data}}
+    </li>
+    {{/each}}
+
+</ul>
